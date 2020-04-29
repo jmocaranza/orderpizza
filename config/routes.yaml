@@ -1,0 +1,24 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+ 
+#board:
+# - add: POST /api/v1/board
+# - edit: PUT /api/v1/board
+# - delete: DELETE /api/v1/board/{id}
+# - list: GET /api/v1/board
+# - list-item: GET /api/v1/board/{id}
+ 
+#order:
+# - add: POST /api/v1/order
+# - edit: PUT /api/v1/order
+# - delete: DELETE /api/v1/order/{id}
+# - list: GET /api/v1/order
+# - list-item: GET /api/v1/order/{id}
+
+
+app.swagger_ui:
+    path: /api/doc
+    methods: GET
+    defaults: { _controller: nelmio_api_doc.controller.swagger_ui }
+ 
