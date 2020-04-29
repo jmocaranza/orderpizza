@@ -185,7 +185,50 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** ``
+    **error:** false <br />
+    **Content:** `{
+            "code": 200,
+            "error": false,
+            "data": {
+                "id": 10,
+                "date_entered": "2020-04-29T04:23:36+00:00",
+                "status": "d",
+                "pizzas": [
+                    {
+                        "id": 17,
+                        "size": "S",
+                        "toppings": [
+                            {
+                                "id": 36,
+                                "name": "Spinach"
+                            },
+                            {
+                                "id": 37,
+                                "name": "Sausage"
+                            },
+                            {
+                                "id": 38,
+                                "name": "Onions"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 18,
+                        "size": "L",
+                        "toppings": [
+                            {
+                                "id": 39,
+                                "name": "Chicken"
+                            },
+                            {
+                                "id": 40,
+                                "name": "Ham"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }`
  
 * **Error Response:**
 
